@@ -1,0 +1,490 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Birthstone Bounce';
+    src: url('../fonts/BirthstoneBounce-Medium.ttf') format('truetype'), url('../fonts/BirthstoneBounce-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*===================================================================*/
+
+:root{
+    --color0 : #66101F;
+    --color1 : #9BB1FF;
+    --color2 : #2A4494;
+    --color3 : #7A9E7E;
+    --color4 : #31493C;  
+    
+    --principal : 'Bebas Neue';
+    --destaque  : 'Birthstone Bounce';
+    --nav       : system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --nome      : 'Raleway', sans-serif;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    height: 92vh;
+}
+
+body#home{
+    background: black url('../imagens/fundo3.jpg') center center no-repeat fixed;
+    background-size: cover;
+}    
+
+body#jni{
+    background: black url('../imagens/jnifundo.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+body#sobre{
+    background: black url('../imagens/fundo2.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+body#projetos{
+    background: black url('../imagens/fundo5.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index:1; /*Um div com um valor mais alto z-index aparecerá na frente de um div com um valor mais baixo z-index*/
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--nav);
+    background: black;
+    height: 8vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{ 
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.nav-list.active{
+    transform: translateX(0);
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+/*=========================================================================*/
+
+span{
+    display: block;
+    height: 100vh;
+}
+
+main h1{
+    font-family: var(--principal), sans-serif;
+    font-size: 4.5em;
+    text-align: center;
+    padding-top: 10%;
+}
+
+main h2{
+    font-family: var(--destaque);
+    font-size: 8em;
+    text-align: center;
+    margin: 5% auto;
+}
+
+main h4{
+    font-family: var(--nome);
+    font-size: 1.2em;
+    color: white;
+}
+
+.titulo > p{
+    margin-bottom: 1%;
+    width: 90%;
+}
+
+main p{
+    text-align: center;
+    margin: auto;
+    width: 75%;
+}
+
+main > div{
+    width: 100%;    
+    height: 500px;    
+    display: inline-flex;
+}
+
+.titulo{
+    text-shadow: 4px 4px 8px black;
+    font-size: border;
+}
+
+main > img{
+    width: 100%;
+}
+
+main > div > div {
+    width: 50%;    
+    margin: auto;
+    text-align: center;   
+}
+
+div.post1{
+    background-color: var(--color0);
+    margin: 0px;
+}
+
+
+div.imagem{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    object-fit: cover;
+    overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */ 
+}
+
+div.post2{
+    background-color: var(--color2);
+}
+
+div.post4{
+    background-color: var(--color4);
+}
+
+section.post3{
+    background-color: var(--color4);
+    display: inline-flex;
+    height: 450px;
+    width: 100%;
+}
+
+.pastores{
+    background-color: var(--color4);
+    justify-content: space-around;  
+}
+
+.ftpastor{
+    height: 50%;
+}
+
+.ftpastor > img{
+    width: 35%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.pastores p{    
+    margin-bottom: 0;
+}
+
+main > section > p {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+div.video{
+    background-color: var(--color4);
+
+    width: 50%;
+    padding: 20px;
+    
+
+    padding-bottom: 26.6%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main h3{    
+    margin-top: 5%;
+    text-align: center;
+    font-family: var(--principal), sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/*===============================================================================*/
+
+footer{
+    width: 100%;
+    margin-top: 150px;
+    background-color: black;
+    font-family: var(--nav);
+}
+
+footer > aside{
+    display: flex;
+}
+
+footer > aside > div{
+    display: block;
+    margin-top: 20px;
+    width: 50%;
+}
+
+aside > div > img{
+    display: block;
+    margin: auto;        
+}
+
+aside > div > ol{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 25%; 
+}
+
+aside > div > ol > img{
+    margin-right: 2px;
+}
+
+.alinhamento{
+    margin-left: 10%;
+}
+
+@media (max-width: 900px){
+
+    /*======================*/
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    /*======================*/
+
+    main h1{
+        font-size: 3.5em;
+        padding: 20% 5px 10% 5px;
+    }
+
+    main h2{
+        font-size: 4em;
+        margin: 3% 0;
+    }
+
+    main > div{
+        display: block;
+    }
+
+    main > div > div {
+        width: 100%;
+        height: 50%;
+    }
+
+    div.imagem{
+        width: 100%;
+        height: 50%;
+        
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        object-fit: cover;
+        overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */ 
+    }
+
+    main > div > div > p {
+        padding-top: 15%;
+    }
+
+    /*==============================*/
+    section.post3{
+        display: block;
+        width: 100%;
+    }
+
+    div.pastores{
+        flex-direction: column;
+        height: 100%;
+        padding: 25px 0;
+    }    
+
+    .ft{
+        margin: 30px 0;
+    }
+
+    .ftpastor > img {
+        width: 30%;
+    }
+
+    .pastores p {
+        padding: 1% 0;
+        margin: auto;
+        
+    }
+    
+    main > section > p {
+        display: flex; 
+        align-items: center;       
+        height: 50%;
+        width: 90%;
+
+    }
+    
+    div.video{
+        height: 3.5%;        
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+    
+        padding-bottom: 30vh;
+        position: relative;
+    }
+    
+    div.video > iframe{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+    /*=================================*/
+     
+    footer > aside > div{
+        margin: auto;
+        width: 300px;
+        text-align: justify;
+        padding-bottom: 5%;
+
+        align-items: flex-start;
+    }
+    footer > aside{
+        display: block;
+        padding: 1px;
+    }
+
+    aside > div > ol{ 
+        padding-left: 5%; 
+    }
+}
+
+@media (max-width: 1051px){
+    .location{
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1051px){
+    main h1{
+        padding: 7.5% 0 0 0;
+    }
+
+    main h2{
+        margin: 1.5% 0;
+    }
+}
+
+@media (min-width: 1600px){
+    div.video {        
+        padding-bottom: 20vh;
+    }
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

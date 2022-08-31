@@ -1,0 +1,140 @@
+Igreja do Nazareno Osasco
+Familia e Legado
+
+lorem
+
+[imagem]
+ 
+lorem
+
+titulo
+
+lorem
+
+[imagem]
+
+lorem
+
+lorem
+
+[video]
+
+Rodapé
+
+===================================================
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+
+    padding-bottom: 56.7%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+=====================================================
+div{
+            display: inline-block;
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid black; /*Bordar*/
+            height: 200px; /*Altura*/
+            width: 200px;  /*Largura*/
+        }
+
+#js calculator;<script>
+    alert("Calculadora");
+    var num1 = prompt("Digite um numero: ");
+    var ops = prompt("escolha um operador: 1=+,2=-,3=/,4=x");
+    var num2 = prompt("Digite um numero: ");
+
+    if(ops = 1){var res=num1+num2}
+    else if(ops = 2){num1-num2};
+
+    alert(`O Resultado é igual a ${res}`);
+    
+</script>
+
+
+<script>
+    alert("Calculadora");
+    var num1 = prompt("Digite um numero: ");
+    var ops = prompt("escolha um operador: 1=+,2=-,3=/,4=x");
+    var num2 = prompt("Digite um numero: ");
+
+    if(ops = 1){var res=num1+num2}
+    else if(ops = 2){num1-num2};
+
+    alert(`O Resultado é igual a ${res}`);
+    
+</script>
+
+#js calculator;
+
+
+=========================================
+:root{
+    --color0 : #66101F;
+    --color1 : #9BB1FF;
+    --color2 : #2A4494;
+    --color3 : #7A9E7E;
+    --color4 : #31493C;  
+    
+    --principal : 'Bebas Neue';
+    --destaque  : 'Birthstone Bounce', cursive;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+body#home{
+    background: black url('../imagens/fundo3.jpg') center center no-repeat fixed;
+    background-size: cover;
+}    
+
+body#jni{
+    background: black url('../imagens/jnifundo.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    min-height: 43px;
+    background-color: black; 
+    z-index:1; /*Um div com um valor mais alto z-index aparecerá na frente de um div com um valor mais baixo z-index*/
+}
+
+nav{
+    display: flex;
+    padding: 1px;
+}
+
+nav > a{
+    margin: auto;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    padding: 0px 40px 0px 0px;
+}
+
+a:hover{
+    text-decoration: solid;
+    color: var(--color1);
+}
+
+==========================================
