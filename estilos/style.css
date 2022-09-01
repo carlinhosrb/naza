@@ -285,6 +285,7 @@ main h3{
 footer{
     width: 100%;
     margin-top: 150px;
+    padding: 10px 0;
     background-color: black;
     font-family: var(--nav);
 }
@@ -365,6 +366,11 @@ aside > div > ol > img{
         display: block;
     }
 
+    .post2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     main > div > div {
         width: 100%;
         height: 50%;
@@ -425,7 +431,7 @@ aside > div > ol > img{
         margin: auto;
         padding: 0px;
     
-        padding-bottom: 30vh;
+        padding-bottom: 190px;
         position: relative;
     }
     
