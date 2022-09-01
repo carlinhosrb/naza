@@ -44,8 +44,8 @@ body{
 }
 
 body#home{
-    background: black url('../imagens/fundo3.jpg') center center no-repeat fixed;
-    background-size: cover;
+    background: black url('../imagens/fundo3.jpg') center center/cover no-repeat fixed;
+    /*background-size: cover;*/
 }    
 
 body#jni{
