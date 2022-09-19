@@ -43,7 +43,7 @@ body{
     height: 92vh;
 }
 
-body#home{
+#home{
     background: black url('../imagens/fundo3.jpg') center center/cover no-repeat fixed;
     /*background-size: cover;*/
 }    
