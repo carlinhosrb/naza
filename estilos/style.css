@@ -49,8 +49,14 @@ body{
 }
 
 body#home{
-    background: black url('../imagens/fundo3.jpg') center center/cover no-repeat fixed;
-    /*background-size: cover;*/
+
+    height: 100vh;
+    background: url(../imagens/fundo3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    /*background: black url('../imagens/fundo3.jpg') center center/cover no-repeat fixed;
+    background-size: cover;*/
 } 
 
 body#jni{

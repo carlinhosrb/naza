@@ -11,6 +11,12 @@
 </head>
 
 <body id="home">
+
+    <script>
+        document.addEventListener("scroll", function(){
+        document.querySelector("body").style.backgroundPosition = '0 '+window.pageYOffset+'px';});
+     </script>
+     
     <header>
         <nav>
             <a class="logo" href="index.html" target="_self" rel="next"><img src="imagens/logo_nazarenop.png" alt="logo Nazareno"></a>
