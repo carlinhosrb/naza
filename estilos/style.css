@@ -540,10 +540,10 @@ aside > div > ol > img{
     
     body {
         overflow-x: hidden;
-    }
+    }   
 
     #home{
-        background: black url('../imagens/fundo3-900.jpg') center center/cover no-repeat fixed;
+        background: black url(../imagens/fundo-testeiphone.jpg) center center/cover no-repeat fixed;
     } 
 
     /*============NavBar==========*/
@@ -551,7 +551,7 @@ aside > div > ol > img{
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 50vw;
+        width: 100vw;
         height: 92vh;
         background: black;
         flex-direction: column;
@@ -594,7 +594,7 @@ aside > div > ol > img{
 
     .dropdown-content a {
         padding: 0;
-        width: 50vw;
+        width: 100vw;
     }
       
     /* Show the dropdown menu on hover */
