@@ -48,14 +48,14 @@ body{
     height: 92vh;
 }
 
-body#home{
+.home{
 
     /*height: 100vh;
     background: url(../imagens/fundo3.jpg);
     background-size:cover;
     background-repeat: no-repeat;*/
 
-    background: black url('../imagens/fundo3.jpg') center center/cover no-repeat fixed;
+    background: black url('../imagens/fundo5.jpg') center center/cover no-repeat fixed;
 } 
 
 body#jni{
@@ -536,15 +536,17 @@ aside > div > ol > img{
     margin-left: 10%;
 }
 
+@media (max-width:500px) {
+    .home{
+        background: black url(../imagens/fundo-testeiphone.jpg) center center/cover no-repeat fixed;
+    } 
+}
+
 @media (max-width: 900px){
     
     body {
         overflow-x: hidden;
-    }   
-
-    #home{
-        background: black url(../imagens/fundo-testeiphone.jpg) center center/cover no-repeat fixed;
-    } 
+    }  
 
     /*============NavBar==========*/
     .nav-list{
