@@ -50,13 +50,12 @@ body{
 
 body#home{
 
-    height: 100vh;
+    /*height: 100vh;
     background: url(../imagens/fundo3.jpg);
     background-size:cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 
-    /*background: black url('../imagens/fundo3.jpg') center center/cover no-repeat fixed;
-    background-size: cover;*/
+    background: black url('../imagens/fundo3.jpg') center center/cover no-repeat fixed;
 } 
 
 body#jni{
@@ -538,12 +537,16 @@ aside > div > ol > img{
 }
 
 @media (max-width: 900px){
-
-    /*============NavBar==========*/
+    
     body {
         overflow-x: hidden;
     }
 
+    #home{
+        background: black url('../imagens/fundo3-900.jpg') center center/cover no-repeat fixed;
+    } 
+
+    /*============NavBar==========*/
     .nav-list{
         position: absolute;
         top: 8vh;
