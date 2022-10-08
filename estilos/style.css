@@ -80,6 +80,7 @@ header{
 }
 
 a{
+    font-family: var(--nav);
     color: white;
     text-decoration: none;
     transition: 0.3s;
