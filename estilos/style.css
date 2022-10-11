@@ -242,10 +242,12 @@ span{
 
 .containerproje .slide-container .slide .contentproje h3{
     font-size: 35px;
+    text-shadow: 2px 2px 10px black;
 }
 
 .containerproje .slide-container .slide .contentproje p{
     text-align: inherit;
+    text-shadow: 4px 4px 8px black;
     margin: 0;
     font-size: 16px;
     width: 40%;
@@ -497,6 +499,81 @@ main h3{
     text-align: center;
 }
 
+/*================================grid===========================================*/
+.container-galeria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 300px;
+    padding: 5px;
+    grid-gap: 5px;
+
+    width: auto; 
+    height: auto;
+}
+
+.item-galeria{
+    position: relative;
+
+    width: auto;
+    margin: 0;
+    text-align: left;
+}
+
+.item-galeria .img-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-galeria .title-galeria{
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: white;
+    padding: 10px 0px;
+    font-size: 2em;
+    font-family: var(--principal);
+
+    display: grid;
+}
+
+.h-1{
+    grid-row: span 1;
+}
+
+.h-2{
+    grid-row: span 2;
+}
+
+.w-1{
+    grid-column: span 1;
+}
+
+.w-2{
+    grid-column: span 2;
+}
+
+
+@media(max-width:900px){
+    .container-galeria{
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 50vh;
+    }
+
+    .item-galeria{
+        height: auto;
+    }
+
+    .h-2{
+        grid-row: span 1;
+    }
+    
+    .w-2{
+        grid-column: span 1;
+    }
+}
 /*===============================================================================*/
 
 footer{
@@ -537,11 +614,13 @@ aside > div > ol > img{
     margin-left: 10%;
 }
 
+/*==========teste iphone======================================*/
 @media (max-width:500px) {
     .home{
         background: black url(../imagens/fundo-testeiphone.jpg) center center/cover no-repeat fixed;
     } 
 }
+/*============================================================*/
 
 @media (max-width: 900px){
     
