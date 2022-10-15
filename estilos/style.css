@@ -48,14 +48,14 @@ body{
     height: 92vh;
 }
 
-.home{
-
-    /*height: 100vh;
+.home{    
     background: url(../imagens/fundo3.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;*/
-
-    background: black url('../imagens/fundo5.jpg') center center/cover no-repeat fixed;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: black url('../imagens/fundo5.jpg') center center/cover no-repeat fixed;*/
 } 
 
 body#jni{
@@ -617,7 +617,12 @@ aside > div > ol > img{
 /*==========teste iphone======================================*/
 @media (max-width:500px) {
     .home{
-        background: black url(../imagens/fundo-testeiphone.jpg) center center/cover no-repeat fixed;
+        /*background: black url(../imagens/fundo-testeiphone.jpg) center center/cover no-repeat fixed;*/
+        background: url(../imagens/fundo-testeiphone.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     } 
 }
 /*============================================================*/
