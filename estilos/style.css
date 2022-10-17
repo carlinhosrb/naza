@@ -380,6 +380,7 @@ main h2{
 main h4{
     font-family: var(--nome);
     font-size: 1.2em;
+    padding: 2px 0;
     color: white;
 }
 
@@ -470,6 +471,23 @@ section.post3{
 
 .pastores p{    
     margin-bottom: 0;
+    padding: 2px 0;
+}
+
+.pastores ol{
+    padding: 2px 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.pastores ol > a > img{
+    margin-right: 2px;
+}
+
+.pastores ol > a{
+    display: flex;
 }
 
 main > section > p {
@@ -612,8 +630,12 @@ aside > div > ol{
     padding-left: 25%; 
 }
 
-aside > div > ol > img{
+aside > div > ol > a > img{
     margin-right: 2px;
+}
+
+aside > div > ol > a{
+    display: flex;
 }
 
 .alinhamento{
