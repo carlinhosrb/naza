@@ -59,7 +59,7 @@ body{
 } 
 
 body#jni{
-    background: black url('../imagens/jnifundo.jpg') center center no-repeat fixed;
+    background: black url('../imagens/fundojni.jpg') center center no-repeat fixed;
     background-size: cover;
 }
 
@@ -405,6 +405,12 @@ main > div{
     font-size: border;
 }
 
+.titulojni > picture > img{
+    display: block;
+    padding-top: 1%;
+    margin: auto;
+}
+
 main > img{
     width: 100%;
 }
@@ -615,16 +621,10 @@ aside > div > ol > img{
 }
 
 /*==========teste iphone======================================*/
-@media (max-width:500px) {
-    .home{
-        /*background: black url(../imagens/fundo-testeiphone.jpg) center center/cover no-repeat fixed;*/
-        background: url(../imagens/fundo-testeiphone.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 50%;
-    } 
-}
+
+
+
+
 /*============================================================*/
 
 @media (max-width: 900px){
@@ -691,6 +691,10 @@ aside > div > ol > img{
     }
 
     /*==============================*/
+
+    .titulojni > picture > img{
+        padding-top: 50%;
+    }
 
     main h1{
         font-size: 3.5em;
@@ -815,6 +819,10 @@ aside > div > ol > img{
 
     main h2{
         margin: 1.5% 0;
+    }
+
+    .titulojni > picture > img{
+        padding-top: 1%;
     }
 }
 
